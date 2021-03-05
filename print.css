@@ -1,0 +1,66 @@
+.print-only  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+
+ span:after {
+    content: "your submitted information" ;
+    margin:0 auto;
+    width:50%;
+    color:black;
+    font-size:20px;
+    text-align: center;
+    
+}
+
+.not-print{
+   display: none;
+  
+}
+
+@page {
+    size: A4; /* DIN A4 standard, Europe */
+    margin:0;
+  }
+
+  html, body {
+      width: 210mm;
+     height: 282mm;
+      font-size: 50px;
+      background: #FFF;
+      overflow:visible;
+  }
+  .container{
+      width:50%;
+      margin:0 auto;
+      border:1px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding:20px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .container .form-details{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      
+  }
+
+  .container input{
+   margin:20px;
+
+    
+}
+
+.form-details input[type="submit"] {
+    padding:10px 20px;
+    background: coral;
+}
